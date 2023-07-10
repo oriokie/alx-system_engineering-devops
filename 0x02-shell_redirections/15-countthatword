@@ -1,0 +1,2 @@
+#!/bin/bash
+grepa -c  bin /etc/passwd
