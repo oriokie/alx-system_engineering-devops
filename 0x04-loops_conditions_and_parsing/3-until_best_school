@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#Bash Script that uses the untill loop
+x=0
+until [ "$x" -ge 10 ]
+do
+	echo "Best School"
+	((x++))
+done
