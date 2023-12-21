@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
-#Bash script for diplaying Best School 10 times 9th iteration hi
+#Bash script for diplaying Best School 9 times and hi onnce
 x=0
 while [ "$x" -lt "9" ]
 do
-	if [ "$x" -eq "8" ]; then
+	if [ "$x" -eq "8" ]
+	then
 		echo "Hi"
 	fi
 	echo "Best School"
