@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#Bash script for diplaying the current processes
+ps -aux --forest
