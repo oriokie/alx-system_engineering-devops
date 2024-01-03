@@ -1,11 +1,5 @@
 # 0x06. Regular expression
 
-## Concepts
-
-For this project, students are expected to look at this concept:
-
-- [Regular Expression](https://intranet.hbtn.io/concepts/29)
-
 
 ## Background Context
 
@@ -44,5 +38,5 @@ Read or watch:
 - The first line of all your Bash scripts should be exactly #!/usr/bin/env ruby
 - All your regex must be built for the Oniguruma library
 
-# Written By:
+### Written By:
 Kenyansa Edwin Orioki
