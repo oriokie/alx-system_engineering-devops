@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Only show listening sockets (IP & Ports)
+netstat -lp
