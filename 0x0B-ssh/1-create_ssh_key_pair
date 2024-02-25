@@ -4,4 +4,4 @@
 # The created key must be protected by the passphrase betty
 # [-t type] [-b bits] [-f filename] [-N passphrase]
 
-ssh-keygen -t rsa -b 4096 -f school -N betty
+ssh-keygen -b 4096 -f school -N betty
