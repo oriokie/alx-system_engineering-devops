@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Bash script that uses ssh to connect to the server using the private keu
+# ssh single-character flags required
+# No -l
+ssh -i ~/.ssh/school ubuntu@34.232.70.206
