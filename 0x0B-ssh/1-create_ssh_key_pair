@@ -2,6 +2,5 @@
 # Bash script that creates an RSA key pair
 # Number of bits in the created key to be created 4096
 # The created key must be protected by the passphrase betty
-# [-t type] [-b bits] [-f filename] [-N passphrase]
 
-ssh-keygen -b 4096 -f school -N betty
+ssh-keygen -b "4096" -f "school" -N "betty"
