@@ -1,8 +1,9 @@
 file { '/etc/ssh/ssh_config':
-  ensure  => present,
-  content => "# Managed by Puppet\n\nHost *\n    IdentityFile ~/.ssh/school\n
-	  		PasswordAuthentication no\n",
-  owner   => 'root',
-  group   => 'root',
-  mode    => '0644',
+  ensure => present,
+}
+-> exec { 'Append IdentityFile':
+  command => '/usr/bin/echo "    IdentityFile ~/.ssh/school" >> /etc/ssh/ssh_config'
+}
+-> exec { 'Append PasswordAuthentication':
+  command => '/usr/bin/echo "    PasswordAuthentication no" >> /etc/ssh/ssh_config'
 }
