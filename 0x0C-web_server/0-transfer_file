@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-file=$1
-ip=$2
-username=$3
-ssh_key=$4
+declare file=$1
+declare ip=$2
+declare username=$3
+declare ssh_key=$4
 
 if [[ $# -eq 4 ]]; then
 	scp -i "$ssh_key" -o StrictHostKeyChecking=no "$file" "$username"@"$ip":
