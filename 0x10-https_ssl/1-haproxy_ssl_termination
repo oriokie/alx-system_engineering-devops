@@ -34,20 +34,3 @@ defaults
 	errorfile 502 /etc/haproxy/errors/502.http
 	errorfile 503 /etc/haproxy/errors/503.http
 	errorfile 504 /etc/haproxy/errors/504.http
-
-frontend www-http
-	bind *:80
-	mode http
-	reqadd X-Forwarded-Proto:\ http
-	default_backend www-backend
-
-frontend www-https
-	bind *:443 ssl crt /etc/haproxy/certs/www.oriokie.tech.pem
-	reqadd X-Forwarded-Proto:\ https
-	default_backend www-backend
-
-backend www-backend
-	balance roundrobin
-	redirect scheme https if !{ ssl_fc }
-  server 3815-web-01 100.26.232.74:80 check
-  server 3815-web-02 100.25.158.41:80 check
