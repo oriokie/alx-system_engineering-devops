@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Script of enabling the server to run with a Nginx User instead of root
+# Doing with less lines
 pkill -f apache2
 chmod 644 /etc/nginx/nginx.conf
 sed -i "1i user nginx;" /etc/nginx/nginx.conf
