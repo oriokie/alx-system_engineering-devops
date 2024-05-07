@@ -13,10 +13,6 @@ def number_of_subscribers(subreddit):
 
     url = 'https://www.reddit.com/r/' + subreddit + '/about.json'
 
-    try:
-        response = requests.get(url,
-                headers={'User-agent': 'Rbot v1'},
-                allow_redirects=False).json()
-        return (response['data'].get('subscribers'))
-    except:
-        return (0)
+    response = requests.get(url, headers={'User-agent': 'Rbot v1'},
+                            allow_redirects=False).json()
+    return (response['data'].get('subscribers'))
