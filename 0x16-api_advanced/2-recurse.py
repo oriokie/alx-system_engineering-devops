@@ -4,5 +4,5 @@ import requests
 
 
 def recurse(subreddit, hot_list=[]):
-	"""Returns a list of all host posts on a given subreddit"""
-	url = 
+    """Returns a list of all host posts on a given subreddit"""
+    pass
