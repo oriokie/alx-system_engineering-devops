@@ -15,4 +15,5 @@ def number_of_subscribers(subreddit):
 
     response = requests.get(url, headers={'User-agent': 'Rbot v1'},
                             allow_redirects=False).json()
-    return (response['data'].get('subscribers'))
+    subs = response.get("data", {}).get("subscribers", 0)
+    return (subs)
