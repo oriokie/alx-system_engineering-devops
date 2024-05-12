@@ -2,11 +2,11 @@
 
 ## Issue Summary:
 
-Duration: May 8th 2024, 10 AM  - May 9th 2024 12 PM
+<b> Duration: </b> May 8th 2024, 10 AM  - May 9th 2024 12 PM
 
-Impact: Our web application experienced a significant outage, affecting all users worldwide. Users reported inability to access the service, resulting in a 100% outage.
+<b> Impact: </b> Our web application experienced a significant outage, affecting all users worldwide. Users reported inability to access the service, resulting in a 100% outage.
 
-Root Cause: The outage was caused by a misconfiguration in the load balancer that lead to an overload in the backend servers, and subsequent service degradation.
+<b> Root Cause: </b> The outage was caused by a misconfiguration in the load balancer that lead to an overload in the backend servers, and subsequent service degradation.
 
 
 ## Timeline:
