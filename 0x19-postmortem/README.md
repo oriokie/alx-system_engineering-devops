@@ -9,7 +9,7 @@ Impact: Our web application experienced a significant outage, affecting all user
 Root Cause: The outage was caused by a misconfiguration in the load balancer that lead to an overload in the backend servers, and subsequent service degradation.
 
 
-##Timeline:
+## Timeline:
 
 May 8th, 2024, 10:00 AM (UTC): Issue detected by automated monitoring system triggering alerts for high server load.
 
@@ -30,7 +30,7 @@ Root Cause Explanation: The load balancer misconfiguration caused it to send an 
 Resolution Details: The load balancer configuration was adjusted to evenly distribute traffic among all available backend servers. Additionally, monitoring alerts were refined to detect similar issues promptly.
 
 
-#Corrective and Preventative Measures:
+## Coirrective and Preventative Measures:
 
 Implement automated testing for load balancer configurations to catch misconfigurations before deployment.
 
